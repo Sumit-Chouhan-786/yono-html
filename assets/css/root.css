@@ -1,18 +1,18 @@
-/*  ================== ROOT =================== */
-
 :root {
   --color-primary: green;
-  --font-xsm: 10px;
-  --font-sm: 12px;
-  --font-xBase: 14px;
-  --font-base: 16px;
-  --font-xmd: 18px;
-  --font-md: 19px;
-  --font-xlg: 28px;
-  --font-lg: 30px;
-  --font-xl: 50px;
+  /* Using clamp() for responsive font sizes */
+  --font-xsm: clamp(8px, 1vw, 10px);
+  --font-sm: clamp(10px, 1.6vw, 20px);
+  --font-xBase: clamp(12px, 1.7vw, 14px);
+  --font-base: clamp(14px, 1.8vw, 16px);
+  --font-xmd: clamp(16px, 2vw, 18px);
+  --font-md: clamp(14px, 2.2vw, 22px);
+  --font-xlg: clamp(15px, 3vw, 28px);
+  --font-lg: clamp(18px, 3.5vw, 30px);
+  --font-xl: clamp(24px, 5vw, 50px);
 }
-/* define all color */
+
+/* Define all colors */
 .bg_primary {
   background-color: var(--color-primary);
 }
@@ -55,34 +55,4 @@
 
 .text_xl {
   font-size: var(--font-xl);
-}
-
-@media (max-width: 1023.98px) {
-  :root {
-    --font-sm: 11px;
-    --font-xmd: 13px;
-    --font-lg: 27px;
-    --font-xl: 40px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  :root {
-    --font-xBase: 12px;
-    --font-base: 14px;
-    --font-xmd: 20px;
-    --font-xlg: 24px;
-    --font-xl: 32px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  :root {
-    --font-sm: 10px;
-    --font-base: 12px;
-    --font-xmd: 14px;
-    --font-xlg: 16px;
-    --font-lg: 18px;
-    --font-xl: 20px;
-  }
 }

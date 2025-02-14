@@ -1,11 +1,343 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yono app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
 </head>
+
 <body>
-    <h1>Disclaimed</h1>
+    <header>
+        <div id="overlay" class="d-none position-fixed top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+        <div
+            class="d-flex position-relative justify-content-between container max_w_750 py-sm-3 py-2 bg_primary align-items-center">
+            <div id="toggle" class="d-flex gap-2 align-items-center text-white text_lg fw-bold">
+                <i class="fa-solid fa-bars"></i> Menu
+            </div>
+            <a href="/" class="mb-0 text-white fw-semibold text_lg">All Yono App Hub</a>
+            <a target="_blank" href="https://t.me/allgamingapps"><button type="button"
+                    class="btn btn-light text_xbase">Help</button></a>
+
+
+            <div style="top: 70%;" id="responshiv_nav"
+                class="row ml_0 justify-content-center p-3 mt-4 container bg-white d-none start-0 max_w_750  overflow-hidden position-absolute">
+                <div class="col-4">
+                    <div class="">
+                        <a href="index.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <a href="about.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-user"></i> About Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <a href="terms.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-id-card"></i> T & C
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <div class="mt-3">
+                        <a href="contact.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white  rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-phone"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <div class="mt-3">
+                        <a href="disclaimed.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-shield"></i> Disclaimed
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="container max_w_750 px-0 overflow-hidden bg-white">
+        <ul class="nav nav-pills my-2 d-flex flex-row flex-nowrap justify-content-between px-2">
+            <li class="nav-item col text-nowrap px-sm-1">
+                <a href="index.html"
+                    class="nav-link fw-semibold rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_sm align-items-center"
+                    id="home">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+            <li class="nav-item col text-nowrap px-sm-1">
+                <a href="about.html"
+                    class="nav-link fw-semibold gap-sm-2 gap-1 text_sm rounded-0 d-flex justify-content-center align-items-center"
+                    id="about">
+                    <i class="fa-solid fa-user"></i> About Us
+                </a>
+            </li>
+            <li class="nav-item col text-nowrap px-sm-1">
+                <a href="contact.html"
+                    class="nav-link fw-semibold gap-sm-2 gap-1 text_sm rounded-0 d-flex justify-content-center align-items-center"
+                    id="contact">
+                    <i class="fa-solid fa-phone"></i> Contact Us
+                </a>
+            </li>
+            <li class="nav-item col text-nowrap px-sm-1">
+                <a href="terms.html"
+                    class="nav-link fw-semibold gap-sm-2 gap-1 text_sm rounded-0 d-flex justify-content-center align-items-center"
+                    id="terms">
+                    <i class="fa-solid fa-id-card"></i> T&C
+                </a>
+            </li>
+            <li class="nav-item col text-nowrap px-sm-1">
+                <a href="disclaimed.html"
+                    class="nav-link fw-semibold gap-sm-2 gap-1 text_sm rounded-0 d-flex justify-content-center align-items-center"
+                    id="policy">
+                    <i class="fa-solid fa-shield"></i> Disclaimed
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="container bg-white max_w_750 px-3 overflow-hidden">
+            <div class="py-sm-4 py-3">
+                <h2 class="text-center text_primary fw-semibold">Disclaimers</h2>
+                <p>
+                    This widely used this site applies to all users of the business and gives detailed information about
+                    the applications
+                    available on it. Our site includes various apps such as investment apps like Ludo, Aviator, currency
+                    support, investment
+                    crash cricket and trending apps. By reaching the latest Rummy app, you must accept these principles
+                    and agree with them.
+                </p>
+                <b>Understanding the Scope of Our Platform
+                </b>
+                <p>
+                    This site works as a digital platform for various trivia applications. We have provided the app to
+                    people coming to the
+                    role of this site. We do not have any control on the development amendment or UN of the content and
+                    functioning of this
+                    app whatsoever We give a good application
+
+                </p>
+                <b>User Responsibility and Financial Risk
+                </b>
+
+                <p>
+                    Risk of Financial Activities: All the applications given in it are gambling or investment platform,
+                    apps related to
+                    money lending are important, there is a possibility of loss, you can take an implicit risk, you are
+                    fully responsible
+                    for any academic result that may happen by using this application, we are not even slightly
+                    responsible for it, please
+                    play this application after thinking carefully, on your own responsibility
+
+                    Informed Decision-Making: Before you run away, I am trying to thoroughly research and understand all
+                    the applications in
+                    it, especially those related to the risks of the daughters. We encourage you to use this app as
+                    needed. This includes
+                    seeking advice from specialist experts as needed.
+
+                </p>
+                <b>No Endorsement of Financial Strategies
+                </b>
+                <p>
+                    Our platform does not endorse any specific student strategies, nor do we guarantee their success.
+                    Any decisions made
+                    based on the content of the app are entirely your responsibility.
+
+                </p>
+                <b>Legal Age and Compliance
+                </b>
+                <p>
+                    Age Restrictions: Some apps are specifically designed or linked to student investment. They are
+                    designed to be used by
+                    people over 18 or 21 years of age in a certain period of time. You must comply with these
+                    restrictions, otherwise you
+                    will be solely responsible for it, not us because You can understand the application
+
+                </p>
+                <b>Compliance with Local Laws
+                </b>
+                <p>
+                    It is your responsibility to ensure that your use of any app complies with local laws and
+                    regulations. This includes
+                    understanding legal issues related to gambling and other activities.
+
+                </p>
+                <b>Critical Review of App-Specific Terms
+                </b>
+                <p>
+                    User Due Diligence: Before signing up, registering or joining any app on our platform, it is
+                    important that you
+                    thoroughly review and understand the specific rules and regulations of the app and all its rules and
+                    regulations. If you
+                    do not understand them, you may suffer losses in the application.
+
+                </p>
+                <b>No Responsibility for Discrepancies
+                </b>
+                <p>
+                    The consequences of our app's rules and regulations or policies We are not responsible for any
+                    discrepancy or
+                    misunderstanding that may occur. Only you will be responsible for any misunderstanding.
+
+                </p>
+                <b>No Liability for Losses
+                </b>
+
+                <p>
+                    The intelligence listed on our website will not be responsible for any direct, negative or punitive
+                    damage including any
+                    discrepancy that may occur as a result of inability to use or use any app. Your association with
+                    these apps is entirely
+                    at your own risk and discretion. You can sign up to this application only on your own responsibility
+                    because in this
+                    application, you meet humans and you can understand them very well. yes
+
+
+                </p>
+                <b>Awareness of Addiction Risks
+                </b>
+                <p>
+
+                    There is a risk of loss. Some apps, especially those related to games and gambling or business, can
+                    be addictive. We
+                    encourage people to be aware of the possibility of responsible use of these apps and the possibility
+                    of addiction. Seek
+                    help. If you or someone you know is getting news related to these apps, we advise you to seek
+                    professional help because
+                    the addiction of this application is very bad. You have to play this application carefully,
+                    otherwise you can also get
+                    addicted. We are not responsible for this.
+
+                </p>
+                <h2>Additional Disclaimers
+                </h2>
+                <b>Variability in App Functionality
+                </b>
+                <p>
+                    The capabilities and contents of this app can change with time. And we cannot guarantee its
+                    stability or availability
+
+                    Non-Endorsement of App Content: The display of an app on our platform does not itself support its
+                    entire working
+                    capacity. We only show people according to our own work and act according to our risk-taking
+                    capacity.
+
+
+                </p>
+                <b>No Financial or Legal Advice</b>
+                <p>
+                    Vidya Colony does not provide investment advice. Any information received from our side should not
+                    be taken as
+                    professional advice. Play any game within this application only at your own risk.
+
+
+                </p>
+                <b>Changes and Amendments
+                </b>
+                <p>We reserve the right to modify this reason at any time. Such changes are posted on our website. If
+                    you do this, you will
+                    be immediately affected and it is your responsibility to review it regularly and how you play this
+                    application is your
+                    responsibility and if you face any kind of loss in this, then we are not responsible for that.</p>
+            </div>
+            <div class="row justify-content-center p-3 mt-4">
+                <div class="col-4">
+                    <div class="">
+                        <a href="index.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <a href="about.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-user"></i> About Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="">
+                        <a href="terms.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-id-card"></i> T & C
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mt-3">
+                        <a href="contact.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white  rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-phone"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mt-3">
+                        <a href="disclaimed.html"
+                            class="bg_primary text-nowrap px-3 py-2 text-white rounded-0 d-flex justify-content-center gap-sm-2 gap-1 text_xbase mb-0 fw-semibold align-items-center"
+                            id="home">
+                            <i class="fa-solid fa-shield"></i> Disclaimed
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-white text-center fw-bold text_md py-2 mt-4 bg_primary">copyright @ 2025 Latest Rummy App All
+                Rights Reserved </p>
+        </section>
+    </main>
+
+    <script>
+        const toggleButton = document.getElementById("toggle");
+        const navBar = document.getElementById("responshiv_nav");
+        const overlay = document.getElementById("overlay");
+
+        function openNav() {
+            navBar.classList.remove("d-none");
+            overlay.classList.remove("d-none");
+        }
+
+        function closeNav() {
+            navBar.classList.add("d-none");
+            overlay.classList.add("d-none");
+        }
+
+        toggleButton.addEventListener("click", openNav);
+        overlay.addEventListener("click", closeNav);
+    </script>
+    <script src="./assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
+
 </html>
