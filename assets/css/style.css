@@ -4,10 +4,12 @@
 * {
   text-decoration: none !important;
   list-style-type: none !important;
+  
 }
 
 body {
   font-family: "poppins", "sans serif";
+  background-color: #EBEBEB;
 }
 /* common classes */
 .max_w_750 {
