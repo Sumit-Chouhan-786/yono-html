@@ -19,22 +19,24 @@ body {
 .nav-item {
   width: 100%;
 }
-
+.image_rounde{
+  border-radius: 55px;
+}
 .nav-link {
   transition: all 300ms linear;
   padding: 8px !important;
-  color: #198754 !important;
+  color: black !important;
 }
 .nav-link:hover {
   transition: all 300ms linear;
-  background-color: #198754;
-  color: white !important;
+  background-color: rgb(213, 67, 67);
+  color: black !important;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #198754 !important;
-  color: white !important;
+  background-color: rgb(213, 67, 67) !important;
+  color: black !important;
 }
 
 .common_card {
@@ -47,14 +49,14 @@ body {
     rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 .marq_parent {
-  background-color: #198754;
+  background-color: rgb(213, 67, 67);
   border: 1px dotted red;
   line-height: 100%;
 }
 
 /* Active Tab Style */
 .active_tab {
-  background-color: #198754 !important;
+  background-color: rgb(213, 67, 67) !important;
   color: white;
 }
 
@@ -66,7 +68,7 @@ body {
 
 /* Hover Effect */
 .myTab:hover {
-  background-color: #198754 !important;
+  background-color: rgb(213, 67, 67) !important;
   color: white;
 }
 

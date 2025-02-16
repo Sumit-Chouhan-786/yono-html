@@ -1,5 +1,5 @@
 :root {
-  --color-primary: green;
+  --color-primary: rgb(213, 67, 67);
   /* Using clamp() for responsive font sizes */
   --font-xsm: clamp(8px, 1vw, 10px);
   --font-sm: clamp(10px, 1.6vw, 20px);
