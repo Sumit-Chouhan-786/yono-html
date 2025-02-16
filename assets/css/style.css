@@ -74,6 +74,8 @@ body {
 
 .tab_image {
   max-width: 118px;
+  border-radius: 40px;
+  padding: 16px;
   object-fit: contain;
 }
 .ml_0 {
