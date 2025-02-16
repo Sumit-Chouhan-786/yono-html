@@ -5,8 +5,8 @@
   --font-sm: clamp(10px, 1.6vw, 20px);
   --font-xBase: clamp(12px, 1.7vw, 14px);
   --font-base: clamp(14px, 1.8vw, 16px);
-  --font-xmd: clamp(16px, 2vw, 18px);
-  --font-md: clamp(14px, 2.2vw, 22px);
+  --font-xmd: clamp(12px, 2vw, 18px);
+  --font-md: clamp(10px, 2.2vw, 22px);
   --font-xlg: clamp(15px, 3vw, 28px);
   --font-lg: clamp(18px, 3.5vw, 30px);
   --font-xl: clamp(24px, 5vw, 50px);
