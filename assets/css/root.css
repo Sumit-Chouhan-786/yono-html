@@ -3,7 +3,7 @@
   /* Using clamp() for responsive font sizes */
   --font-xsm: clamp(8px, 1vw, 10px);
   --font-sm: clamp(10px, 1.6vw, 20px);
-  --font-xBase: clamp(12px, 1.7vw, 14px);
+  --font-xBase: clamp(11px, 1.7vw, 14px);
   --font-base: clamp(14px, 1.8vw, 16px);
   --font-xmd: clamp(12px, 2vw, 18px);
   --font-md: clamp(10px, 2.2vw, 22px);
