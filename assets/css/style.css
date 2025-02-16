@@ -54,6 +54,10 @@ body {
   border: 1px dotted red;
   line-height: 100%;
 }
+.card_shadow div .btn-success{
+  background: linear-gradient(to right, rgb(0, 128, 0), rgb(255, 0, 0)) !important;
+  border: none;
+}
 
 /* Active Tab Style */
 .active_tab {
